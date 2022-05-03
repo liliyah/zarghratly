@@ -12,8 +12,8 @@ android {
         applicationId "funapps.fun.music.zarghtly"
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "4.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -23,7 +23,10 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            shrinkResources true
+
+            minifyEnabled true
+
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
